@@ -1,0 +1,535 @@
+.{
+margin: 0;
+padding: 0;
+font-family: 'poppins'; sans-relief;
+box-sizing: border-box;
+}
+body{
+    background-color:#fff;
+    color: #080808 ;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 100%;
+    height: 120vh;
+    background-image: url("image/mimi-thian-BYGLQ32Wjx8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.container{
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #312e2e;
+    position: sticky;
+    z-index: 100;
+    width: 100%;
+
+}
+.logo{
+    width: 140px;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004F;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+
+}
+.header-text{
+    
+    
+    font-size: 30px;
+
+}
+.header-text h1{
+    font-size: 40px;
+    margin-top: 15px;
+
+}
+.header-text h1 span{
+    color: #ff004F;
+}
+.container-text{
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+    height: max-content;
+    
+}
+.container-textone{
+    background-image: url("image/cours5.png");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    justify-content: right;
+   
+}
+.container-texttwo{
+    
+    color: rgb(91, 77, 77);
+    width: 50%;
+    justify-content: left; 
+
+}
+.container-texttwo h1{
+    font-size: 20px;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+.container-texttwo p{
+    margin-left: 20%;
+    font-size: 40px;
+    margin-top: 5%;
+   
+}
+
+
+.container-texttwo p span{
+    color: rgb(242, 30, 30);
+}
+.footer{
+    margin-top: 10%;
+    height: 35vh;
+    width: 100%;
+    color: aliceblue;
+   
+}
+.footer h1{
+    color:  rgb(242, 30, 30);
+
+    margin-left: 30%;
+    margin-right: 30%; 
+    margin-top: 15%;
+}
+.container-text-img{
+    height:20% ;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    margin-top: 5%;
+
+ }
+
+
+.navbar{
+    margin-top: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #14b4e4;
+    height: 20vh;
+    color: #080808;
+}
+.cours-container-partone{
+    display: flex;
+    width: 100%;
+    height: 150vh;
+}
+
+
+.after-footer{
+    height:80vh ;
+    width: 100%;
+    position: absolute;
+    color: #080808;
+    background-color: #db84a0;
+    border-top-left-radius: 15%;
+    
+    
+}
+.after-footer-one{
+    display: flex;
+    position:relative ;
+    margin-bottom: 5%;
+    height: 25vh;
+    width: 100%;
+   
+}
+
+.after-footer-one .one{
+    position: relative;
+    margin-left: 15%;
+    margin-right: 5%;
+    padding-top: 5%;
+    
+}
+.after-footer-two{
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+    height: 25vh;
+    width: 100%;
+    
+}
+.after-footer-two .two{
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right:5% ;
+    padding-top: 3%; 
+    
+}
+.after-footer span h3{
+    padding-bottom: 20px;
+}
+
+
+          /*css de la partie "cours.html"
+           */
+
+.cours-container-partone .cours-container-image{
+  background-image: url("image/coursimg3.png");
+  background-position: center;
+  background-size: cover;
+  width: 65%;
+  height: 100%;
+  justify-content: right;
+        
+}
+.cours-container-center-zero{
+   height: 15vh;
+   width: 50%;
+   margin-left: 25%;
+   background-color: #14b4e4 ;
+   border-radius: 15px;
+   margin-top: 20vh;
+
+}
+.cours-container-center-zero h1{
+    text-align: center;
+    padding-top: 6vh;
+    font-size: 25px;
+}
+.cours-container-center-moins{
+    height: 10vh;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10vh;
+    background-color:white ;
+    border-radius: 15px;
+    border: #14b4e4 solid 5px ; 
+    color: #14b4e4;
+}
+.cours-container-center-moins h1{
+    text-align: center;
+    padding-bottom: 4vh;
+    font-size: 20px;
+}
+
+.cours-container-partone .cours-container-image h3 {
+    margin-top: 20%;
+    margin-left: 15%;
+    font-size: large;
+}
+
+.cours-container-partone .cours-container-text{
+    width: 45%;
+    height: 100%;
+    justify-content: left;
+    color: #14b4e4;
+    text-align: center;
+
+}
+.cours-container-partone .cours-container-text h2{
+margin: 10% 30%;
+}
+.cours-container-partone .cours-container-text P{
+    margin: 10% 10%;
+    }
+
+    /*
+     */
+
+     .cours-container-center-un {
+        display: flex;
+        height: 80vh;
+        width: 100%;
+        background-color: #acc1c7;
+        margin-top: 10vh;
+     }
+     .cours-container-center-un .center-un{
+        height:60vh ;
+        width: 25%;
+        margin-top: 15vh;
+        border-radius: 30px;
+        margin-left: 4%;
+        margin-right: 4%;
+        background-color: #fff;
+        position: relative ;
+
+     }
+     .cours-container-center-un .center-un .uner{
+        margin-top: 0;
+        height: 15vh;
+        width: 100%;
+        background-color: #b4d9e4;
+        border-radius: 15px ;
+        position:absolute;
+
+     }
+     .center-un .uner h1{
+        text-align: center;
+        font-size: 30px;
+     } 
+     .center-un h3{
+        margin-top: 35vh;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 20px;
+        color:#ff004F;
+     }
+      .center-deux-zero h1{
+     height: 10vh;
+     width: 40%;
+     margin-left: 30%;
+     margin-top: 10vh;
+     background-color:white ;
+     border-radius: 15px;
+     border: #61cebe solid 5px ; 
+     color:  #008F7A;
+    }
+
+     .cours-container-center-deux{
+        display: flex;
+        height: 80vh;
+        width: 100%;
+        background-color: #008F7A;
+        margin-top: 10vh;
+     }
+     .cours-container-center-deux .center-deux-unis{
+        height:60vh ;
+        width: 25%;
+        margin-top: 15vh;
+        border-radius: 30px;
+        margin-left: 4%;
+        margin-right: 4%;
+        background-color: #fff;
+        position: relative ;
+     }
+      
+     .center-deux-unis .deux-unis {
+        margin-top: 0;
+        height: 15vh;
+        width: 100%;
+        background-color: #61cebe;
+        border-radius: 15px ;
+        position:absolute;
+     }
+
+     .center-deux-unis .deux-unis h1{
+        text-align: center;
+        font-size: 30px;
+     }
+      .center-deux-unis h3{
+        margin-top: 35vh;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 20px;
+        color:#ff004F;
+     }
+
+
+
+
+     /* css de la partie tarif.html 
+     */
+
+     .section-un {
+
+     }
+
+     .tarif-un {
+        
+        height: 200vh;
+        width:100% ;
+        margin-top: none;
+        
+
+     }
+     .tarif-un-zero {
+        height: 100vh;
+        width: 100%;
+        margin-top: 5vh;
+     }
+     .un-zero-two{
+        margin-top: 2%;
+        height: 10vh;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 15px;
+        background-color: #74d1ee;
+     }
+     .un-zero-two h2 {
+        padding-top: 2vh;
+        text-align: center;
+        color: rgb(64, 60, 60);
+        
+     }
+     .un-zero-three{
+        margin-top: 5%;
+        height: 6vh;
+        width: 40%;
+        margin-left: 30%;
+        border-radius: 30px;
+        border: #0af3f3 solid 3px; 
+     }
+     .un-zero-three h3 {
+        padding-bottom: 10px;
+        text-align: center;
+        color: rgb(64, 60, 60);
+     }
+      
+     .tarif-un-deux {
+        border-radius: 100%;
+        margin-top: -20vh;
+        margin-right: -20vh;
+        margin-left: 60%;
+        border: #07b1f4 solid 20px;
+        height: 90vh;
+        width: 50%;
+        align-items: flex-end;
+        z-index: 1;
+        background-image:url("image/cours4.png") ;
+        background-repeat: no-repeat;
+     }
+     .tarif-un-deux {
+        
+     }
+     .un-zero-fore {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        
+     }
+     .un-zero-fore .zero-fore{
+        height:70vh ;
+        width: 25%;
+        margin-top: 15vh;
+        margin-left:5%;
+        margin-right: 3%;
+        color: aliceblue;
+        border-radius: 15px;
+        background-color: #14b4e4;
+     }
+     .zero-fore h2 {
+        text-align: center;
+       margin-left: 40px;
+        margin: 40px 40px;
+     }
+     .zero-fore h3 {
+        margin: 70px 45px ;
+     }
+     .zero-six{
+        height: 160vh;
+        width: 100%;
+        margin-top: 10vh;
+     }
+     .zero-six .zero-six-sevn{
+        margin-top: 5%;
+        height: 8vh;
+        width: 40%;
+        margin-left: 30%;
+        border-radius: 30px;
+        background-color:#14b4e4  ; 
+        margin-bottom: 5%;
+        
+     }
+     .zero-six .zero-six-sevn h1{
+        text-align: center;
+        color: white;
+        padding-bottom: 5px;
+        padding-top: 5px;
+     }
+     
+
+     .un-zero-five {
+        display: flex;
+        height: 90vh;
+        width: 100%;
+        background-color: #b4d9e4;
+     }
+     .un-zero-five .zero-five{
+        height:70vh ;
+        width: 25%;
+        margin-top: 15vh;
+        margin-left:5%;
+        margin-right: 3%;
+        color:#14b4e4 ;
+        border-radius: 15px;
+        background-color:white;
+     }
+     .un-zero-five .zero-five h2 {
+        text-align: center;
+        margin-left: 40px;
+        margin: 40px 40px;
+     }
+     .un-zero-five .zero-five h3{
+        margin: 70px 45px ;
+     }
+
+     .section-deux-zero{
+        margin-top: 170vh;
+        height: 100vh;
+        width: 100%;
+        background-image: url("image/ordinateur2.webp");
+        background-position: center;
+        background-size: cover;
+     }
+     .section-deux-zero .deux-zero{
+       
+        height: 30vh;
+        width: 100%;
+        margin-bottom: 30vh;
+        background-color:#008E9B;
+        color: #ff004F; 
+     }
+     .section-deux-zero .deux-zero h3{
+        text-align: center;
+        padding-top: 13vh;
+        font-size: 25px;
+     }
+     .section-deux-zero .deux-zero-null{
+        height: 50vh;
+        width: 100%;
+     }
+
+
+
+
+     /* css de la partie commencer.php
+     */
+
+     .section-un-commencer{
+        display: flex;
+        height: 150vh;
+        width: 100%;
+     }
+     
+                                                                                                                                                                                                                                                                              ;
