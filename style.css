@@ -17,9 +17,7 @@ body{
     background-size: cover;
     background-position: center;
 }
-.blessing{
-   
-}
+
 nav{
     display: flex;
     align-items: center;
@@ -463,9 +461,9 @@ margin: 10% 30%;
      /* css de la partie tarif.html 
      */
 
-     .section-un {
+     /* .section-un {
 
-     }
+     } */
 
      .tarif-un {
         height:200vh ;
@@ -524,9 +522,9 @@ margin: 10% 30%;
         background-image:url("image/cours4.png") ;
         background-repeat: no-repeat;
      }
-     .tarif-un-deux {
+     /* .tarif-un-deux {
         
-     }
+     } */
      .un-zero-fore {
         display: flex;
         flex-wrap: wrap;
