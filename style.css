@@ -1,7 +1,7 @@
-.{
+*{
 margin: 0;
 padding: 0;
-font-family: 'poppins'; sans-relief;
+font-family: 'Roboto', sans-serif;
 box-sizing: border-box;
 }
 body{
@@ -17,7 +17,7 @@ body{
     background-size: cover;
     background-position: center;
 }
-.container{
+.blessing{
    
 }
 nav{
@@ -63,16 +63,16 @@ nav ul li a:hover:after{
 .header-text{
     
     
-    font-size: 30px;
+    
 
 }
 .header-text h1{
-    font-size: 40px;
+    
     margin-top: 15px;
 
 }
 .header-text h1 span{
-    color: #ff004F;
+    color:  #14b4e4;
 }
 .container-text{
     margin-top: 0;
@@ -98,38 +98,38 @@ nav ul li a:hover:after{
 
 }
 .container-texttwo h1{
-    font-size: 20px;
+    
     align-items: center;
     margin-top: 20%;
     margin-left: 25%;
 }
-.container-texttwo p{
+.container-texttwo strong{
     margin-left: 20%;
-    font-size: 40px;
+    
     margin-top: 5%;
    
 }
 
 
 .container-texttwo p span{
-    color: rgb(242, 30, 30);
+    color: #14b4e4;
 }
 .footer{
     margin-top: 10%;
-    height: 35vh;
+    min-height: 35vh;
     width: 100%;
     color: aliceblue;
    
 }
 .footer h1{
-    color:  rgb(242, 30, 30);
+    color:  #14b4e4;
 
     margin-left: 30%;
     margin-right: 30%; 
     margin-top: 15%;
 }
 .container-text-img{
-    height:20% ;
+    min-height:20% ;
     width: 50%;
     background-position: center;
     background-size: cover;
@@ -139,42 +139,38 @@ nav ul li a:hover:after{
  }
 
 
-.navbar{
-    margin-top: 0;
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: #14b4e4;
-    height: 20vh;
-    color: #080808;
-}
+
 .cours-container-partone{
     display: flex;
-    width: 100%;
-    height: 150vh;
+    max-width: 100%; 
+    min-height: 150vh;
 }
 
 
 .after-footer{
-    height:80vh ;
+    min-height:20vh ;
     width: 100%;
     position: absolute;
     color: #080808;
-    background-color: #db84a0;
+    background-color:#fff;
+    border: 5px solid  #14b4e4;
     border-top-left-radius: 15%;
     
     
 }
 .after-footer-one{
     display: flex;
+    flex-wrap: wrap;
     position:relative ;
-    margin-bottom: 5%;
-    height: 25vh;
+    margin-bottom: 3%;
+    min-height: 7vh;
     width: 100%;
    
 }
 
 .after-footer-one .one{
     position: relative;
+    flex: 1;
     margin-left: 15%;
     margin-right: 5%;
     padding-top: 5%;
@@ -182,9 +178,10 @@ nav ul li a:hover:after{
 }
 .after-footer-two{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-    margin-top: 5%;
-    height: 25vh;
+    margin-top: 3%;
+    min-height: 7vh;
     width: 100%;
     
 }
@@ -196,25 +193,46 @@ nav ul li a:hover:after{
     padding-top: 3%; 
     
 }
+#icone{
+   font-size: 40px;
+}
 .after-footer span h3{
     padding-bottom: 20px;
+}
+.after-footer .after-footer-one .one i{
+   height: 40px;
+   width: 40px;
+   color: #14b4e4;
+}
+.after-footer .after-footer-two .two i{
+   height: 40px;
+   width: 40px;
+   color: #14b4e4;
 }
 
 
           /*css de la partie "cours.html"
            */
 
+           .paddin{
+            margin-top: 0;
+            padding-left: 20%;
+            padding-right: 20%;
+            background-color: #14b4e4;
+            min-height: 20vh;
+            color: #080808;
+        }
 .cours-container-partone .cours-container-image{
   background-image: url("image/coursimg3.png");
   background-position: center;
   background-size: cover;
   width: 65%;
-  height: 100%;
+  min-height: 100%;
   justify-content: right;
         
 }
 .cours-container-center-zero{
-   height: 15vh;
+   min-height: 15vh;
    width: 50%;
    margin-left: 25%;
    background-color: #14b4e4 ;
@@ -225,10 +243,10 @@ nav ul li a:hover:after{
 .cours-container-center-zero h1{
     text-align: center;
     padding-top: 6vh;
-    font-size: 25px;
+    
 }
 .cours-container-center-moins{
-    height: 10vh;
+    min-height: 10vh;
     width: 40%;
     margin-left: 30%;
     margin-top: 10vh;
@@ -239,19 +257,19 @@ nav ul li a:hover:after{
 }
 .cours-container-center-moins h1{
     text-align: center;
-    padding-bottom: 4vh;
-    font-size: 20px;
+    padding-top: 10px;
+    
 }
 
 .cours-container-partone .cours-container-image h3 {
     margin-top: 20%;
     margin-left: 15%;
-    font-size: large;
+    
 }
 
 .cours-container-partone .cours-container-text{
     width: 45%;
-    height: 100%;
+    min-height: 100%;
     justify-content: left;
     color: #14b4e4;
     text-align: center;
@@ -269,17 +287,22 @@ margin: 10% 30%;
 
      .cours-container-center-un {
         display: flex;
-        height: 80vh;
+        flex-wrap: wrap;
+        height:80vh ;
         width: 100%;
-        background-color: #acc1c7;
+        background-color: #14b4e4;
         margin-top: 10vh;
      }
      .cours-container-center-un .center-un{
-        height:60vh ;
+      height: 60vh;
+        max-height:70vh ;
         width: 25%;
+       max-width: 30%;
         margin-top: 15vh;
+        flex: 1;
         border-radius: 30px;
         margin-left: 4%;
+        margin-bottom: 5vh;
         margin-right: 4%;
         background-color: #fff;
         position: relative ;
@@ -287,76 +310,152 @@ margin: 10% 30%;
      }
      .cours-container-center-un .center-un .uner{
         margin-top: 0;
-        height: 15vh;
+        min-height: 15vh;
         width: 100%;
         background-color: #b4d9e4;
         border-radius: 15px ;
         position:absolute;
 
      }
+     .uner{
+      margin-bottom: 10px;
+     }
      .center-un .uner h1{
         text-align: center;
-        font-size: 30px;
+        margin: 40px 5px;
      } 
      .center-un h3{
-        margin-top: 35vh;
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 20px;
-        color:#ff004F;
+      text-align: center;
+      margin: 25vh 5px;
+        /* margin-top: 35vh; */
+        /* margin-left: 30px; */
+        /* margin-right: 30px; */
+        
+        color: #14b4e4;
      }
       .center-deux-zero h1{
-     height: 10vh;
-     width: 40%;
+     text-align: center;
+     min-height: 10vh;
+     max-width: 40%;
      margin-left: 30%;
      margin-top: 10vh;
+     padding-top: 10px;
      background-color:white ;
      border-radius: 15px;
      border: #61cebe solid 5px ; 
-     color:  #008F7A;
+     color:   #14b4e4;
     }
 
      .cours-container-center-deux{
         display: flex;
-        height: 80vh;
-        width: 100%;
-        background-color: #008F7A;
+        flex-wrap: wrap;
+        height:80vh ;
+        width:100% ;
+        background-color:  #fff;
         margin-top: 10vh;
      }
      .cours-container-center-deux .center-deux-unis{
         height:60vh ;
+        max-height: 70vh;
         width: 25%;
+        max-width: 30%;
+        flex: 1;
         margin-top: 15vh;
+        margin-bottom: 5vh;
         border-radius: 30px;
         margin-left: 4%;
         margin-right: 4%;
-        background-color: #fff;
+        background-color: #14b4e4;
         position: relative ;
      }
       
      .center-deux-unis .deux-unis {
         margin-top: 0;
-        height: 15vh;
-        width: 100%;
+        min-height: 15vh;
+         width: 100%;
         background-color: #61cebe;
         border-radius: 15px ;
         position:absolute;
      }
-
+     .deux-unis{
+      margin-bottom: 10px;
+     }
      .center-deux-unis .deux-unis h1{
         text-align: center;
-        font-size: 30px;
+        margin: 40px 5px;
+       
      }
       .center-deux-unis h3{
-        margin-top: 35vh;
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 20px;
-        color:#ff004F;
+         text-align: center;
+         margin: 25vh 5px;
+        /* margin-top: 35vh; */
+        /* margin-left: 30px; */
+        /* margin-right: 30px; */
+        color:#fff;
      }
 
+   .apres{
+      background-image: url("image/Campus-Transfo-expertise-teleconduite-reseau.jpg");
+      background-size: cover;
+     min-height: 120vh;
+     color: whitesmoke;
+     margin-top: 5vh;
+     
+   }
+   .apres header{
+      text-align: center;
+      margin-top: 5vh;
+      color: whitesmoke;
+   }
+   .apres p h1{
+      color: whitesmoke;
+      text-align: center;
+      margin-top: 5vh;
 
+   }
+   .apres p strong{
+      color: rgb(13, 105, 242);
+      text-align: center;
+      margin-top: 5vh;
 
+   }
+   .apres .apres-fin{
+      display: flex;
+      
+      flex-wrap: wrap;
+      height: 80vh;
+      max-width: 90vh;
+      
+
+   }
+   .apres-fin .fin{
+      height: 70vh;
+      max-height:80vh ;
+      width: 25%;
+       max-width: 40%;
+      margin-left: 7%;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      flex: 1;
+      background-color:rgb(2, 37, 89) ;
+      opacity: 0.5;
+      border-radius: 30px;
+      color: whitesmoke;
+      text-align: center;
+      position: relative;
+      
+   }
+   .fin h2{
+      opacity: 5;
+      text-align: center;
+      margin-top: 15vh;
+      
+   }
+   .fin img{
+      margin-top: 20vh;
+      justify-content: center;
+      opacity: 100%;
+   }
 
      /* css de la partie tarif.html 
      */
@@ -366,22 +465,25 @@ margin: 10% 30%;
      }
 
      .tarif-un {
-        
-        height: 200vh;
-        width:100% ;
+        height:200vh ;
+        max-height: 210vh;
+        width: 100%;
+        max-width:110% ;
         margin-top: none;
         
 
      }
      .tarif-un-zero {
-        height: 100vh;
+      height: 100vh;
+        min-height: 90vh;
         width: 100%;
+        max-width: 110%;
         margin-top: 5vh;
      }
      .un-zero-two{
         margin-top: 2%;
-        height: 10vh;
-        width: 50%;
+        min-height: 10vh;
+         max-width: 50%;
         margin-left: 25%;
         border-radius: 15px;
         background-color: #74d1ee;
@@ -394,14 +496,14 @@ margin: 10% 30%;
      }
      .un-zero-three{
         margin-top: 5%;
-        height: 6vh;
-        width: 40%;
+        min-height: 6vh;
+         max-width: 40%;
         margin-left: 30%;
         border-radius: 30px;
         border: #0af3f3 solid 3px; 
      }
      .un-zero-three h3 {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         text-align: center;
         color: rgb(64, 60, 60);
      }
@@ -412,8 +514,8 @@ margin: 10% 30%;
         margin-right: -20vh;
         margin-left: 60%;
         border: #07b1f4 solid 20px;
-        height: 90vh;
-        width: 50%;
+        min-height: 90vh;
+        max-width: 50%;
         align-items: flex-end;
         z-index: 1;
         background-image:url("image/cours4.png") ;
@@ -424,37 +526,46 @@ margin: 10% 30%;
      }
      .un-zero-fore {
         display: flex;
+        flex-wrap: wrap;
         height: 100vh;
+        max-height: 110vh;
         width: 100%;
+        max-width: 110%;
+        
         
      }
      .un-zero-fore .zero-fore{
-        height:70vh ;
+        height: 70vh;
+        min-height:80vh ;
         width: 25%;
+        max-width: 30%;
         margin-top: 15vh;
         margin-left:5%;
         margin-right: 3%;
+        flex: 1;
         color: aliceblue;
         border-radius: 15px;
         background-color: #14b4e4;
+        position: relative;
      }
      .zero-fore h2 {
         text-align: center;
-       margin-left: 40px;
+       /* margin-left: 40px; */
         margin: 40px 40px;
      }
      .zero-fore h3 {
-        margin: 70px 45px ;
+      text-align: center;
+        margin: 30px 5px ;
      }
      .zero-six{
-        height: 160vh;
-        width: 100%;
+        min-height: 160vh;
+        max-width: 100%;
         margin-top: 10vh;
      }
      .zero-six .zero-six-sevn{
         margin-top: 5%;
-        height: 8vh;
-        width: 40%;
+        min-height: 8vh;
+        max-width: 40%;
         margin-left: 30%;
         border-radius: 30px;
         background-color:#14b4e4  ; 
@@ -470,54 +581,62 @@ margin: 10% 30%;
      
 
      .un-zero-five {
-        display: flex;
-        height: 90vh;
+        display: flex; 
+        flex-wrap: wrap;
+        height:90vh ;
+        max-height: 100vh;
         width: 100%;
         background-color: #b4d9e4;
      }
      .un-zero-five .zero-five{
         height:70vh ;
+        max-height:80vh;
         width: 25%;
+        max-width: 30%;
         margin-top: 15vh;
         margin-left:5%;
         margin-right: 3%;
+        flex: 1;
         color:#14b4e4 ;
         border-radius: 15px;
         background-color:white;
+        position: relative;
      }
      .un-zero-five .zero-five h2 {
         text-align: center;
-        margin-left: 40px;
-        margin: 40px 40px;
+       
+        margin: 40px 5px;
      }
      .un-zero-five .zero-five h3{
-        margin: 70px 45px ;
+      text-align: center;
+        margin: 30px 5px ;
+        
      }
 
      .section-deux-zero{
-        margin-top: 170vh;
-        height: 100vh;
-        width: 100%;
+      margin-top: 150vh;
+        min-height: 100vh;
+        max-width: 100%;
         background-image: url("image/ordinateur2.webp");
         background-position: center;
         background-size: cover;
      }
      .section-deux-zero .deux-zero{
        
-        height: 30vh;
-        width: 100%;
+        min-height: 30vh;
+        max-width: 100%;
         margin-bottom: 30vh;
-        background-color:#008E9B;
-        color: #ff004F; 
+        background-color:#fff;
+        color: #14b4e4; 
      }
      .section-deux-zero .deux-zero h3{
         text-align: center;
         padding-top: 13vh;
-        font-size: 25px;
+        
      }
      .section-deux-zero .deux-zero-null{
-        height: 50vh;
-        width: 100%;
+        min-height: 50vh;
+        max-width: 100%;
      }
 
 
@@ -531,5 +650,47 @@ margin: 10% 30%;
         height: 150vh;
         width: 100%;
      }
+
+
+     @media (max-width:375px) {
+      .cours-container-center-un{
+         flex-direction: row;
+      }
+       .center-un{
+         flex:100%;
+         max-width: 350px;
+      } 
+      .un-zero-fore{
+         flex-direction: row;
+      }
+      .zero-fore{
+         flex:100%;
+         max-width: 350px;
+         
+      }
+      .un-zero-five{
+         flex-direction: row;
+      }
+       .zero-five{
+         flex:100%;
+         max-width: 350px;
+         
+      }
+      .apres-fin{
+         flex-direction: row;
+      }
+       .fin{
+         flex:100%;
+         max-width: 350px; 
+         
+      }
+      .cours-container-center-deux{
+         flex-direction: row;
+      }
+       .center-deux-unis{
+         flex:100%;
+         max-width: 350px; 
+         flex-direction: row;
+      }
+     }
      
-                                                                                                                                                                                                                                                                              ;
